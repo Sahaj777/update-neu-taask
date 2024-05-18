@@ -1,0 +1,374 @@
+
+body {
+	background-color: #25383C;
+	font-family: Arial;
+	
+}
+
+h1 {
+	color: black; 
+	margin: 30px;
+	color: white;
+	}
+	
+h2 {
+    margin-top: 2px;
+}
+
+h4 {
+    margin-top: 30px;
+}
+
+
+#t1	{
+    margin-top: -20px;
+    line-height: 10px;
+    display: inline;
+}
+
+#t2imp	{
+
+    line-height: 5px; 
+    font-size: small;
+}
+
+#t2imp_1	{
+
+    margin-top: 30px;
+    line-height: 5px; 
+    font-size: small;
+}
+
+
+
+#t2_2	{
+ 
+    break-word: break-all;
+    font-size: small;
+    
+}
+
+#t2_2_1	{
+    text-align: justify;
+    width: clamp(100px, 100%, 800px);  
+    font-size: small;
+    margin-left: 15px;
+    
+}
+
+#t2_2_2	{
+    text-align: justify;
+    width: clamp(100px, 100%, 740px);  
+    font-size: small;
+    margin-left: 75px;
+    margin-top: -10px;
+    
+}
+
+
+#t2_3	{
+ 
+    text-align: justify;
+    width: clamp(100px, 100%, 800px); 
+
+    font-size: small;
+    margin-left: 50px;
+}
+
+
+#t3	{
+    color: white;
+    line-height: 5px;
+    display: inline;
+}
+
+
+#table	{
+
+    text-align: left;
+    
+    line-height: 15px;
+    width: auto;
+}
+
+#table_td{
+    text-align: left;
+    line-height: 15px;
+    font-weight: bold;
+    padding-right: 20px;
+
+}
+
+#div01 {	
+       position: relative;
+       background-color: none;
+       margin-left:30px;
+       width: 900px;
+       display:flex;
+}
+
+
+#div02 {
+        position: relative;
+        display:flex;
+        width: 900px;
+        margin-left: 30px;
+        padding:15px;
+        background-color: #5E7D7E;
+        border-radius: 5px;
+        box-shadow: 1px 1px 10px -1px black;
+        
+	}
+
+#div03 {	
+       position: relative;
+       display: flex;
+       background-color: none;
+       margin-left:15px;
+       width: 900px;
+       }  
+
+
+#div04 {
+ 
+        position: relative;
+        margin-left: 30px;
+        width: 900px;
+        padding:15px;
+        background-color: white;
+        border-radius: 5px;
+        box-shadow: 1px 1px 10px -1px black;
+            
+	}
+
+
+#div05 {	
+       position: relative;
+       display: flex;
+       background-color: none;
+       margin-left:30px;
+       width: 900px;
+       }  
+
+
+
+#si_1{
+       position: fixed;
+       color: white;
+       font-size: x-small;
+       margin-top: 40px;           
+}
+
+#si_2{
+       position: fixed;
+       color: white;
+       font-size: x-small;
+       margin-top: 50px;           
+}
+#s00 {
+        color: white;
+
+}
+#s01 {	
+        position: relative;
+        left: 5px;
+        color: black;
+        background-color: white;
+        border: 0,5px solid black;
+        border-radius: 2px;
+
+  
+        }
+        
+#t_sel_projects{
+        position: relative;
+        font-size: small;
+        width: auto;
+        margin: 0px;
+        left: 100px;
+        font-size: normal;
+        color: black;
+        display: inline;
+
+}
+ 
+ 
+#sel_projects{
+        position: relative;
+        width: auto;
+        left: 105px;
+        margin: 0px;
+        display: inline;
+}
+
+
+
+#b1	{	
+        position: fixed;
+        width: auto;
+
+        padding: 6px 8px;
+        left: 760px;
+        margin-top: -6px;
+        color: white;
+        background-color: #FF6347;
+        border: 0,5px solid black;
+        border-radius: 4px;
+
+        }
+
+
+#b2	{	
+        position: relative;
+        text-decoration: underline;
+        left: 820px;
+        top: 5px;
+        border: none;
+        background-color: transparent;
+        color: white;
+        transition-duration: 0.4s;
+        }
+
+#b3	{	
+        position: relative;
+        text-decoration: underline;
+        left: 820px;
+        border: none;
+        margin: 10px;
+        background-color: transparent;
+        color: white;
+        transition-duration: 0.4s;
+        }
+
+
+#b3_1	{	
+        position: relative;
+        text-decoration: underline;
+        left: 790px;
+        border: none;
+        margin: 10px;
+        background-color: transparent;
+        color: white;
+        border-radius: 4px;
+        transition-duration: 0.4s;
+        }
+
+
+#b4	{	
+        position: relative;
+        width: auto;
+        padding: 4px 8px;
+        font-size: 12px;
+        left: 0px;
+        color: white;
+        background-color: #5E7D7E;
+        border: 0,5px solid black;
+        border-radius: 2px;
+
+        }
+
+#b5	{	
+        position: relative;
+        text-decoration: underline;
+        margin-left: -5px;
+        border: none;
+        background-color: transparent;
+        color: black;
+        transition-duration: 0.4s;
+        }
+
+#b6	{	
+        position: relative;
+        margin: 5px;
+        width: auto;
+  
+        padding: 4px 6px;
+        left: 20px;
+        color: white;
+        background-color: #5E7D7E;
+        border: 0,5px solid black;
+        border-radius: 2px;
+        }
+        
+#b6_1	{	
+        position: relative;
+        text-decoration: underline;
+        left: 590px;
+        top: 4px;
+        border: none;
+        background-color: transparent;
+        color: black;
+        transition-duration: 0.4s;
+        }        
+        
+        
+#f1{
+        display: flex;
+        margin-left: 60px;
+
+}
+
+input[type=file]::file-selector-button {
+        display:none;
+
+}
+
+#fi1{
+        
+        position: relative;
+        
+        left: 55px;
+        color: black;
+        font-size: 12px;
+        display: inline;
+}
+
+label{    
+                        
+        text-align: center;       
+        font-size: 12px;  
+        position: relative;
+               
+        padding: 6px 8px;
+        left: 50px;
+        color: black;
+        background-color: white;
+        border: 1,0px solid black;
+        border-radius: 2px;
+        display: inline;             
+}
+
+
+label:hover{
+        color: grey;
+
+}
+
+
+
+#b2:hover	{
+        color: #ededed;
+
+        }
+
+#b3:hover	{
+        color: #ededed;
+
+        }
+
+#b4:hover	{
+        color: #ededed;
+
+        }
+#b5:hover	{
+        color: grey;
+
+        }
+#b6:hover	{
+        color: #ededed;
+
+        }
+#b6_1:hover	{
+        color: grey;
+
+        }

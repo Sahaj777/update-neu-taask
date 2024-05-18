@@ -1,0 +1,101 @@
+<!doctype html>
+
+<html>
+<body>
+    
+    <title>Info</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css.css')}}">
+    <h1>Info</h1>
+
+
+
+<div id="div03">
+        
+    <form action= "/index_page" method="post">
+        <input type="submit" name="Index" id="b3" value=" <-- Back to main">
+    </form>
+</div>   
+
+<div id="div04"> 
+    <h2>Account information</h2>
+    
+    <form action= "/info" id="t1" method="post"> 
+        <table id="table">
+            <tr>
+                <td> </td>
+                <td> </td>
+            </tr>
+            <tr>
+                <td id="table_td"> {{ u1 }} </td>
+                <td> {{ u2 }} </td>
+            </tr>
+            <tr>
+                <td id="table_td"> {{ u3 }} </td>
+                <td> {{ u4 }} </td>
+            </tr>
+            <tr>
+                <td id="table_td"> {{ u5 }} </td>
+                <td> {{ u6 }} </td>
+                <td> {{ u7 }} </td>
+                <td> {{ u8 }} </td>
+                <td> {{ u9 }} </td>  
+                <td> {{ u10 }} </td>
+            </tr>
+        </table>
+    </form>
+    
+    <br></br>
+    
+    <form action= "/info" method="post">
+        <h4>Change your password: </h4>
+        <input type="text" name="cpw" placeholder="New password">
+        <input type="submit" id="b4" name="scpw" value="Confirm">
+           <p> {{ cpw }} </p>   
+    </form>
+</div>
+
+<br></br>
+
+<div id="div04">
+         <h2>Hinweise / Hints</h2>
+         <li>...</li>
+         <li>...</li>
+</div>
+
+<br></br>
+
+<div id="div04">
+         <h2>Datenschutz / Privacy</h2>
+         <form action= "/ds" id="t1" method="post">                 
+             <input type="submit" id="b5" name="ds" value="Datenschutzerklärung & Privacy policy">    
+         </form>         
+</div>
+
+<br></br>
+
+<div id="div04">
+        <h2>Impressum / Imprint </h2>
+        <p id="t2imp_1">--</p>
+
+        <p id="t2imp_1">--</p>
+        <p id="t2imp">--</p>
+        <p id="t2imp">--</p>
+        <p id="t2imp">--</p>
+
+
+        <p id="t2imp_1">--</p>
+        <p id="t2imp">--</p>
+        
+        <h4 id="t2imp">--</h4>
+        <p id="t2imp">--</p>
+        <p id="t2imp">--</p>
+        <p id="t2imp">--</p>
+        <p id="t2imp">--</p>
+           
+</div>
+
+</body>
+</html>
+
+
+

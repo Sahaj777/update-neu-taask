@@ -1,0 +1,1 @@
+Please create you own error.log and access.log file

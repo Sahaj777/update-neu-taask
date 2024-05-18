@@ -1,0 +1,17 @@
+[Unit]
+Description=Celery Beat Service
+After=network.target
+
+[Service]
+Type=simple
+User=www-data
+Group=www-data
+EnvironmentFile=/etc/conf.d/celery
+WorkingDirectory=/opt/celery
+ExecStart=/bin/sh -c '/var/www/Neu/.venv/bin/celery -A /var/www/Neu/run.py beat  \
+    --pidfile=/var/run/celerybeat.pid \
+    --logfile=/var/log/celery.log  --loglevel=INFO'
+Restart=always
+
+[Install]
+WantedBy=multi-user.target

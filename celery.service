@@ -1,0 +1,13 @@
+[Unit]
+Description=Celery Service
+After=network.target
+
+[Service]
+Type=forking
+User=<your_system_user>
+Group=<your_system_group>
+WorkingDirectory=/home/sahaj/Downloads/Neu
+ExecStart=/bin/sh -c 'celery -A app.celery_app worker --loglevel=INFO'
+
+[Install]
+WantedBy=multi-user.target

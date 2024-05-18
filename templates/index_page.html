@@ -1,0 +1,80 @@
+<!doctype html>
+
+<html lang="en">
+<meta http-equiv="content-language" content="en-us">
+<script>
+ var source = new EventSource("/status_1")
+    source.onmessage = function(event){
+        
+        document.getElementById('si_1').innerText = event.data;
+       }
+ 
+ var source = new EventSource("/status_2")
+    source.onmessage = function(event){
+        
+        document.getElementById('si_2').innerText = event.data;
+       }
+ 
+ 
+</script>
+<body>
+
+<title>Index</title>
+<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css.css')}}">
+<h1>Send new files</h1>
+
+
+
+<div id="div01">
+</div>
+    
+<div id="div02">
+  
+    <form action= "/upload" method="post" enctype="multipart/form-data"> 
+        <label for="fi1">Choose files</label>
+        <input type="file" name="file" id="fi1" multiple />         
+        
+        <p id="t_sel_projects">Choose a project: </p>
+        
+        <select name="sel_projects" id="sel_projects">
+            <option value="project1">{{ p_1 }}</option>
+            <option value="project2">{{ p_2 }}</option>
+            <option value="project3">{{ p_3 }}</option>
+            <option value="project4">{{ p_4 }}</option>
+            <option value="project5">{{ p_5 }}</option>
+            
+        </select>
+         
+        <input type="submit" id="b1" value="Send files >>"> 
+
+    </form>
+</div>
+
+<div id="div03">
+    <form action= "/info" method="post">           
+        <input type="submit" name="information" id="b2" value="Information">
+    </form>
+     
+    <form action= "/logout" method="post">
+        <input type="submit" name ="logout" id="b2" value="Logout">
+    </form>
+</div>
+
+<div id="div05">
+       <h5 id="t3"> Short technical overview:</h5>
+ 
+       <p id="si_1"> - </p>  
+       <p id="si_2"> - </p>  
+     
+    {% with messages = get_flashed_messages() %}
+        {% if messages %}
+            {% for msg in messages %}
+                <p id="si_1"> {{ msg }} </p>
+                    {% endfor %}
+           
+                  {% endif %}         
+            {% endwith %}
+
+</div>
+</body>
+</html>

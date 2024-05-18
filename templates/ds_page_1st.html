@@ -1,0 +1,39 @@
+<!doctype html>
+
+<html lang="en">
+<meta http-equiv="content-language" content="en-us">
+<script>
+</script>
+
+<body>
+
+<title>Datenschutzerklärung / Privacy policy</title>
+<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css.css')}}">
+<h1>Datenschutzerklärung and privacy policy</h1>
+
+<div id="div03">
+</div>   
+
+<div id="div04">
+
+ <h4>--</h4> 
+
+   <br></br>
+   <hr>
+   <br></br>
+   
+   <form action= "/ds_1st_login" id="f1" method="post">
+       <p>Ich stimme dieser Datenschutzerklärung zu. / I'am agree with this privacy policy.</p> 
+       <input type="submit" id="b6" name="ds_agree" value="Zustimmen / Agree">  
+   </form>
+    
+   <form action= "/logout" id="f1" method="post">
+       <input type="submit" name ="logout" id="b6_1" value="Ablehnen / Disagree">
+   </form>
+     
+    <br></br>
+</div>   
+
+
+</body>
+</html>

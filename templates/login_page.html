@@ -1,0 +1,25 @@
+<!doctype html>
+
+<html>
+<body>
+    
+    <title>Login</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css.css')}}">
+    <h1>Login</h1>
+<div>
+
+<div id="div01">
+    
+    <form action= "/login" method="post">
+    
+        <input type="text" id="i01" name="username" placeholder="Name">
+
+        <input type="text" id="i01" name="password" placeholder="Password">
+        <input type="submit" id="s01" value="Login">
+        <p id="s00"> {{ l1 }} </p>
+   
+    </form>
+</div>
+
+</body>
+</html>

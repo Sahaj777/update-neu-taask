@@ -1,0 +1,24 @@
+[Unit]
+Description=Celery Service
+After=network.target
+
+[Service]
+Type=forking
+User=www-data
+Group=www-data
+
+EnvironmentFile=/etc/conf.d/celery
+WorkingDirectory=/var/www/Neu
+
+ExecStart=/bin/sh -c "/var/www/Neu/.venv/bin/celery -A /var/www/Neu/run.py multi start worker1 \
+	--pidfile=/var/run/celery.pid --logfile=/var/log/celery.log \
+	--loglevel="INFO" $CELERYD_OPTS"
+ExecStop=/bin/sh -c "/var/www/Neu/.venv/bin/celery multi stopwait worker1 \
+	--pidfile=/var/run/celery.pid --logfile=/var/log/celery.log"
+ExecReload=/bin/sh -c "/var/www/Neu/.venv/bin/celery -A /var/www/Neu/run.py multi restart worker1 \
+	--pidfile=/var/run/celery.pid --logfile=/var/log/celery.log \
+	--loglevel="INFO" $CELERYD_OPTS"
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
